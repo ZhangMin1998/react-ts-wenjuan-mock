@@ -4,6 +4,7 @@ const Random = Mock.Random
 
 module.exports = [
   {
+    // 获取单个问卷信息
     url: '/api/question/:id',
     method: 'get',
     response() {
@@ -19,6 +20,7 @@ module.exports = [
     }
   },
   {
+    // 创建问卷
     url: '/api/question',
     method: 'post',
     response() {
