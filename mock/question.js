@@ -1,8 +1,8 @@
 const Mock = require('mockjs')
 
-const Random = Mock.Random()
+const Random = Mock.Random
 
-module.export = [
+module.exports = [
   {
     url: '/api/question/:id',
     method: 'get',
