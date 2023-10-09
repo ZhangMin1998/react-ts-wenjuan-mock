@@ -10,7 +10,7 @@ async function getRes(fn) {
     setTimeout(() => {
       const res = fn()
       resolve(res)
-    }, 1500)
+    }, 1000)
   })
 }
 
