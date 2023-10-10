@@ -35,11 +35,14 @@ module.exports = [
     // 获取（查询）问卷列表
     url: '/api/question',
     method: 'get',
-    response() {
+    response(ctx) {
+      // console.log('ctx', ctx, ctx.url)
+      const isDeleted = ctx.url.indexOf('isDeleted=true') > -1
+      const isStar = ctx.url.indexOf('isStar=true') > -1
       return {
         errno: 0,
         data: {
-          list: getQuestionList(), // 当前页
+          list: getQuestionList(10, isStar, isDeleted), // 当前页
           total: 100 // 总数
         }
       }
