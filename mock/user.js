@@ -11,8 +11,8 @@ module.exports = [
       return {
         errno: 0,
         data: {
-          username: Random.title(),
-          nickname: Random.cname()
+          username: Random.cname(),
+          // nickname: Random.cname()
         }
       }
     }
