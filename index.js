@@ -10,7 +10,7 @@ async function getRes(fn, ctx) {
     setTimeout(() => {
       const res = fn(ctx)
       resolve(res)
-    }, 1000)
+    }, 700)
   })
 }
 
@@ -19,7 +19,7 @@ mockList.forEach(item => {
   const { url, method, response } = item
   router[method](url, async ctx => {
     // const res = response()
-    const res = await getRes(response, ctx) // 模拟网络请求的加载状态 1s
+    const res = await getRes(response, ctx) // 模拟网络请求的加载状态 700ms
     ctx.body = res // 输出结果
   })
 })
