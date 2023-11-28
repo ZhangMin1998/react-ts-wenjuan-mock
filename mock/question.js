@@ -19,6 +19,7 @@ module.exports = [
               type: 'questionTitle', // 组件类型不能重复
               title: '标题',
               isHidden: false,
+              isLocked: false,
               props: {
                 text: '个人信息调研',
                 level: 1,
@@ -31,6 +32,7 @@ module.exports = [
               type: 'questionInput',
               title: '输入框1',
               isHidden: false,
+              isLocked: false,
               props: {
                 title: '你的姓名',
                 placeholder: '请输入姓名...',
@@ -42,6 +44,7 @@ module.exports = [
               type: 'questionInput',
               title: '输入框2',
               isHidden: false,
+              isLocked: false,
               props: {
                 title: '你的年龄',
                 placeholder: '请输入年龄...',
