@@ -13,6 +13,18 @@ module.exports = [
           id: Random.id(),
           title: Random.ctitle(),
           componentList: [
+            // info
+            {
+              fe_id: Random.id(),
+              type: 'questionInfo',
+              title: '问卷信息',
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: '问卷标题',
+                desc: '问卷描述',
+              }
+            },
             // Title
             {
               fe_id: Random.id(),
@@ -48,6 +60,18 @@ module.exports = [
               props: {
                 title: '你的年龄',
                 placeholder: '请输入年龄...',
+              }
+            },
+            // Paragraph
+            {
+              fe_id: Random.id(),
+              type: 'questionParagraph',
+              title: '段落',
+              isHidden: false,
+              isLocked: false,
+              props: {
+                text: '一行段落',
+                isCenter: false,
               }
             }
           ]
