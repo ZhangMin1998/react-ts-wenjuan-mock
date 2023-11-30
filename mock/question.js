@@ -50,16 +50,16 @@ module.exports = [
                 placeholder: '请输入姓名...',
               }
             },
-            // Input
+            // Textarea
             {
               fe_id: Random.id(),
-              type: 'questionInput',
-              title: '输入框2',
+              type: 'questionTextarea',
+              title: '多行输入',
               isHidden: false,
               isLocked: false,
               props: {
-                title: '你的年龄',
-                placeholder: '请输入年龄...',
+                title: '你的爱好',
+                placeholder: '请输入你的爱好...',
               }
             },
             // Paragraph
