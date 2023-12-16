@@ -12,6 +12,9 @@ module.exports = [
         data: {
           id: Random.id(),
           title: Random.ctitle(),
+          desc: '文件描述',
+          js: '',
+          css: '',
           componentList: [
             // info
             {
